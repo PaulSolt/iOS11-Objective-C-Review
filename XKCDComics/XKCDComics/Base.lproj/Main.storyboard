@@ -17,27 +17,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8kz-o9-K4o">
-                                <rect key="frame" x="0.0" y="96" width="414" height="544.5"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="565"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56M-Tj-hNl">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="516"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57i-HV-tZn">
-                                        <rect key="frame" x="0.0" y="524" width="414" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Tap" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57i-HV-tZn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56M-Tj-hNl">
+                                        <rect key="frame" x="0.0" y="49" width="414" height="516"/>
+                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="8kz-o9-K4o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Gf-Tf-c9c"/>
-                            <constraint firstItem="8kz-o9-K4o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ZG3-4c-DO2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8kz-o9-K4o" secondAttribute="bottom" id="WkQ-pj-bra"/>
+                            <constraint firstItem="8kz-o9-K4o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZG3-4c-DO2"/>
                             <constraint firstItem="8kz-o9-K4o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m2E-B1-FL1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="63Z-bN-AWt" appends="YES" id="H33-Rm-i1C"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="56M-Tj-hNl" id="ItZ-h0-gLm"/>
@@ -45,6 +50,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="63Z-bN-AWt">
+                    <connections>
+                        <action selector="tapped:" destination="BYZ-38-t0r" id="Wtx-AD-vi4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5.7971014492753632" y="-1.3392857142857142"/>
         </scene>
