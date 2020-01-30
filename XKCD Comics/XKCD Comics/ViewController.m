@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
+    // What do we need to do?
+
+//    https://imgs.xkcd.com/comics/worst_thing_that_could_happen.png
+
+
+
+
+
+
 }
 
 
