@@ -13,6 +13,10 @@
 
 @interface ViewController ()
 
+// Private Outlets
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end
 
 @implementation ViewController
@@ -55,6 +59,11 @@
         Comic *comic = [[Comic alloc] initWithDictionary:json];
         
         NSLog(@"Comic: %@", comic.imageURL);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.titleLabel.text = comic.title;
+        });
+
         
         [self downloadImage:comic.imageURL];
         
@@ -102,7 +111,7 @@
 //        NSLog(@"Response: %@", response);
         
         dispatch_async(dispatch_get_main_queue(), ^{
-//            self.imageView.image = image;
+            self.imageView.image = image;
         });
         
     }] resume];
