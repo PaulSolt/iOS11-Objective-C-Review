@@ -8,7 +8,10 @@
 
 import Foundation
 
+// Driver will own the car
 class Driver {
+    
+    // all variables are going to be strong by default
     var name: String
     var car: Car?
     

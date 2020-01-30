@@ -8,9 +8,11 @@
 
 import Foundation
 
+// Car will refer to the driver
 class Car {
+    
     var make: String
-    var driver: Driver?
+    weak var driver: Driver?
     
     init(make: String) {
         self.make = make

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wxb-kY-rQO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wxb-kY-rQO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="1065" y="9"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="F2G-wa-Gkr">
@@ -55,7 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="yFf-W3-CMA"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ouq-zf-aVy">
-                        <barButtonItem key="leftBarButtonItem" title="Done" style="done" id="eWn-rR-PoD">
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="eWn-rR-PoD">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="5El-5q-Mje" id="Bub-jN-zRH"/>
                             </connections>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JX8-H4-xtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676.811594202899" y="16.741071428571427"/>
+            <point key="canvasLocation" x="2442" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Rj-fo-kbm">
@@ -82,7 +82,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gy2-wU-S35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="372" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BPy-jn-mKQ">
@@ -100,7 +100,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l87-EH-WF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766.6666666666667" y="16.741071428571427"/>
+            <point key="canvasLocation" x="1751" y="9"/>
         </scene>
     </scenes>
 </document>
