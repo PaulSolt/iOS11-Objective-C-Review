@@ -14,6 +14,7 @@
 		C09722C423E3587E00F27079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09722C323E3587E00F27079 /* Assets.xcassets */; };
 		C09722C723E3587E00F27079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09722C523E3587E00F27079 /* LaunchScreen.storyboard */; };
 		C09722CA23E3587E00F27079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09722C923E3587E00F27079 /* main.m */; };
+		C09722D223E358A500F27079 /* Comic.m in Sources */ = {isa = PBXBuildFile; fileRef = C09722D123E358A500F27079 /* Comic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C09722C623E3587E00F27079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C09722C823E3587E00F27079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C09722C923E3587E00F27079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C09722D023E358A500F27079 /* Comic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comic.h; sourceTree = "<group>"; };
+		C09722D123E358A500F27079 /* Comic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 				C09722B823E3587E00F27079 /* AppDelegate.m */,
 				C09722BA23E3587E00F27079 /* SceneDelegate.h */,
 				C09722BB23E3587E00F27079 /* SceneDelegate.m */,
+				C09722D323E358AA00F27079 /* Models */,
 				C09722BD23E3587E00F27079 /* ViewController.h */,
 				C09722BE23E3587E00F27079 /* ViewController.m */,
 				C09722C023E3587E00F27079 /* Main.storyboard */,
@@ -74,6 +78,15 @@
 				C09722C923E3587E00F27079 /* main.m */,
 			);
 			path = XKCDComics;
+			sourceTree = "<group>";
+		};
+		C09722D323E358AA00F27079 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C09722D023E358A500F27079 /* Comic.h */,
+				C09722D123E358A500F27079 /* Comic.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 				C09722B923E3587E00F27079 /* AppDelegate.m in Sources */,
 				C09722CA23E3587E00F27079 /* main.m in Sources */,
 				C09722BC23E3587E00F27079 /* SceneDelegate.m in Sources */,
+				C09722D223E358A500F27079 /* Comic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
