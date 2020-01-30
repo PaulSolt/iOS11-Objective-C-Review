@@ -13,8 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // TODO: Driver/Car Demo
-    }
+        // Driver/Car Demo
+        let driver = Driver(name: "Paul")
+        let car = Car(make: "Civic")
+        
+        driver.car = car
+        car.driver = driver
+        
+        
+    } // End of Scope (any local variable is going to be cleaned up)
     
     @IBOutlet var statusLabel: UILabel!
     

@@ -8,7 +8,11 @@
 
 import Foundation
 
+// Driver is going to own the car
 class Driver {
+    
+    // all variables are going to default to
+    // strong references
     var name: String
     var car: Car?
     
