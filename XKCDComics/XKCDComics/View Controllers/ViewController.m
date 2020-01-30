@@ -29,7 +29,19 @@
     
     [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        NSLog(@"Data!");
+        
+        if (error) {
+            NSLog(@"Error: %@", error);
+            // TODO: Completion
+        }
+        
+        NSError *jsonError = nil;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        
+        
+        
+        NSLog(@"JSON: %@", json);
+        
         
     }] resume];
     
