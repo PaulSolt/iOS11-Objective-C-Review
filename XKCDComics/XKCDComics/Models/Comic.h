@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Comic : NSObject
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @property (nonatomic) int num;
 @property (nonatomic) int month;
 @property (nonatomic) int day;
