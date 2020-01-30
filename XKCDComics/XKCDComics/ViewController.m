@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Comic.h"
+#import "LSILog.h"
+#import "LSIErrors.h"
 
 @interface ViewController ()
 
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *baseURL = [NSURL URLWithString:@"http://xkcd.com"];
+    NSURL *baseURL = [NSURL URLWithString:@"https://xkcd.com"];
 //    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES]
     
     int comicNumber = 2261;
