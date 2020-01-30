@@ -32,7 +32,7 @@
     NSURL *baseURL = [NSURL URLWithString:@"https://xkcd.com/"];
 //    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES];
     
-    int comicNumber = 2261;
+    int comicNumber = 417; //2260;
     NSString *comicNumberString = [NSString stringWithFormat:@"%i", comicNumber];
     NSURL *url = [[baseURL URLByAppendingPathComponent:comicNumberString] URLByAppendingPathComponent:@"info.0.json"];
 
@@ -64,31 +64,15 @@
             self.titleLabel.text = comic.title;
         });
 
-        
         [self downloadImage:comic.imageURL];
-        
-//        [self downloadImage:[NSURL URLWithString:@"https://apod.nasa.gov/apod/image/2001/C2017T2_2020-01-24-26-28_posta.jpg"]];
-        
-        NSURL *testImageURL = [[NSBundle mainBundle] URLForResource:@"comic" withExtension:@"png"];
-        NSLog(@"testImage; %@", testImageURL);
-        
-        
-        NSData *data1 = [NSData dataWithContentsOfURL:testImageURL];
-        NSLog(@"data1: %@", data1);
-        UIImage *image = [UIImage imageWithContentsOfFile:testImageURL.path];
-        NSLog(@"image: %@", image);
-        
-        // Download image
-        // UI Update
-
-        
+    
     }] resume];
 }
 
 - (void)downloadImage:(NSURL *)url {
     
+    // Load an image synchronously (good for testing without async logic)
 //    NSData *data = [NSData dataWithContentsOfURL:url];
-//    NSLog(@"Data2: %@", data);
 //    UIImage *image = [UIImage imageWithData:data];
 //    NSLog(@"Image: %@", image);
 
