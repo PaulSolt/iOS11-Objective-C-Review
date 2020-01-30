@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1B52DC23E35D39008047B9 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1B52D923E35D39008047B9 /* LSIErrors.m */; };
+		BD1B52DD23E35D39008047B9 /* LSILog.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1B52DB23E35D39008047B9 /* LSILog.m */; };
 		BDDE872723E3583C00B3C987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDE872623E3583C00B3C987 /* AppDelegate.m */; };
 		BDDE872A23E3583C00B3C987 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDE872923E3583C00B3C987 /* SceneDelegate.m */; };
 		BDDE872D23E3583C00B3C987 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDE872C23E3583C00B3C987 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD1B52D823E35D39008047B9 /* LSILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSILog.h; sourceTree = "<group>"; };
+		BD1B52D923E35D39008047B9 /* LSIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIErrors.m; sourceTree = "<group>"; };
+		BD1B52DA23E35D39008047B9 /* LSIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIErrors.h; sourceTree = "<group>"; };
+		BD1B52DB23E35D39008047B9 /* LSILog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSILog.m; sourceTree = "<group>"; };
 		BDDE872223E3583C00B3C987 /* XKCD Comics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XKCD Comics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDE872523E3583C00B3C987 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDDE872623E3583C00B3C987 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +78,10 @@
 				BDDE872C23E3583C00B3C987 /* ViewController.m */,
 				BDDE873E23E3589C00B3C987 /* Comic.h */,
 				BDDE873F23E3589C00B3C987 /* Comic.m */,
+				BD1B52DA23E35D39008047B9 /* LSIErrors.h */,
+				BD1B52D923E35D39008047B9 /* LSIErrors.m */,
+				BD1B52D823E35D39008047B9 /* LSILog.h */,
+				BD1B52DB23E35D39008047B9 /* LSILog.m */,
 				BDDE872E23E3583C00B3C987 /* Main.storyboard */,
 				BDDE873123E3583E00B3C987 /* Assets.xcassets */,
 				BDDE873323E3583E00B3C987 /* LaunchScreen.storyboard */,
@@ -151,11 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1B52DD23E35D39008047B9 /* LSILog.m in Sources */,
 				BDDE872D23E3583C00B3C987 /* ViewController.m in Sources */,
 				BDDE872723E3583C00B3C987 /* AppDelegate.m in Sources */,
 				BDDE873823E3583E00B3C987 /* main.m in Sources */,
 				BDDE872A23E3583C00B3C987 /* SceneDelegate.m in Sources */,
 				BDDE874023E3589C00B3C987 /* Comic.m in Sources */,
+				BD1B52DC23E35D39008047B9 /* LSIErrors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
