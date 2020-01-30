@@ -28,19 +28,6 @@
     }
     return self;
 }
-
-/*
-@property int num;
-@property int month;
-@property int day;
-@property int year;
-@property NSString *news;
-@property NSString *title;
-@property NSString *safeTitle;
-@property NSString *transcript;
-@property NSString *alt;
-@property NSURL *image;
-*/
 @end
 
 /*

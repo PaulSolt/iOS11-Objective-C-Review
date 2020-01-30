@@ -15,6 +15,8 @@
 		C09722C723E3587E00F27079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09722C523E3587E00F27079 /* LaunchScreen.storyboard */; };
 		C09722CA23E3587E00F27079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09722C923E3587E00F27079 /* main.m */; };
 		C09722D223E358A500F27079 /* Comic.m in Sources */ = {isa = PBXBuildFile; fileRef = C09722D123E358A500F27079 /* Comic.m */; };
+		C09722D823E35D8300F27079 /* LSILog.m in Sources */ = {isa = PBXBuildFile; fileRef = C09722D423E35D8300F27079 /* LSILog.m */; };
+		C09722D923E35D8300F27079 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = C09722D623E35D8300F27079 /* LSIErrors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		C09722C923E3587E00F27079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C09722D023E358A500F27079 /* Comic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comic.h; sourceTree = "<group>"; };
 		C09722D123E358A500F27079 /* Comic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comic.m; sourceTree = "<group>"; };
+		C09722D423E35D8300F27079 /* LSILog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSILog.m; sourceTree = "<group>"; };
+		C09722D523E35D8300F27079 /* LSIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIErrors.h; sourceTree = "<group>"; };
+		C09722D623E35D8300F27079 /* LSIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIErrors.m; sourceTree = "<group>"; };
+		C09722D723E35D8300F27079 /* LSILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSILog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,10 @@
 				C09722BD23E3587E00F27079 /* ViewController.h */,
 				C09722BE23E3587E00F27079 /* ViewController.m */,
 				C09722C023E3587E00F27079 /* Main.storyboard */,
+				C09722D523E35D8300F27079 /* LSIErrors.h */,
+				C09722D623E35D8300F27079 /* LSIErrors.m */,
+				C09722D723E35D8300F27079 /* LSILog.h */,
+				C09722D423E35D8300F27079 /* LSILog.m */,
 				C09722C323E3587E00F27079 /* Assets.xcassets */,
 				C09722C523E3587E00F27079 /* LaunchScreen.storyboard */,
 				C09722C823E3587E00F27079 /* Info.plist */,
@@ -160,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C09722BF23E3587E00F27079 /* ViewController.m in Sources */,
+				C09722D823E35D8300F27079 /* LSILog.m in Sources */,
 				C09722B923E3587E00F27079 /* AppDelegate.m in Sources */,
+				C09722D923E35D8300F27079 /* LSIErrors.m in Sources */,
 				C09722CA23E3587E00F27079 /* main.m in Sources */,
 				C09722BC23E3587E00F27079 /* SceneDelegate.m in Sources */,
 				C09722D223E358A500F27079 /* Comic.m in Sources */,
