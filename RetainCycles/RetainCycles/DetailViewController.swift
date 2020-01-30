@@ -24,6 +24,7 @@ class DetailViewController: UIViewController {
     @IBAction func doneButtonPressed(_ sender: Any) {
 
         completion?(true)
+//        self.dismiss(animated: false)
     }
     
     deinit {

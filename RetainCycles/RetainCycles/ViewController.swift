@@ -30,12 +30,38 @@ class ViewController: UIViewController {
             
             guard let navVC = segue.destination as? UINavigationController,
                 let detailVC = navVC.viewControllers.first as? DetailViewController else { return }
+        
+                // DetailViewController Demo (use the response closure)
+                // Capture list is an array that sits in front of our variables
+                detailVC.completion = { [weak detailVC] done in
+//            detailVC.completion = { [unowned detailVC] done in
 
-            
-            // TODO: DetailViewController Demo (use the response closure)
+                    print("Done: \(done)")
+                    
+                    // Update status label?
+                    if done {
+//                        self.navigationController?.popToViewController(self, animated: true)
+                        detailVC?.dismiss(animated: true)
+                        self.statusLabel.text = "It is done!"
+                    }
+                    self.view.backgroundColor = .green
+                }
             
         }
     }
+    
+//    func closure(done: Bool, detailVC: DetailViewController, viewController: ViewController) {
+//        print("Done: \(done)")
+//
+//        // Update status label?
+//        if done {
+////                        self.navigationController?.popToViewController(self, animated: true)
+//            detailVC?.dismiss(animated: true)
+//            self?.statusLabel.text = "It is done!"
+//        }
+//    }
+    
+    
     
     
     deinit {
