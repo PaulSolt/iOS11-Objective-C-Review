@@ -12,16 +12,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Comic : NSObject
 
-@property int num;
-@property int month;
-@property int day;
-@property int year;
-@property NSString *news;
-@property NSString *title;
-@property NSString *safeTitle;
-@property NSString *transcript;
-@property NSString *alt;
-@property NSURL *imageURL;
+// primitive data types don't need copy
+@property (nonatomic) int num;
+@property (nonatomic) int month;
+@property (nonatomic) int day;
+@property (nonatomic) int year;
+
+// mutable (var)
+// immutable (let)
+
+// mutable type NSMutableString (NSArray, NSDictionary, NSSet)
+@property (nonatomic, copy) NSString *news;  // comic.news = @"...";
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *safeTitle;
+@property (nonatomic, copy) NSString *transcript;
+@property (nonatomic, copy) NSString *alt;
+@property (nonatomic) NSURL *imageURL;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
