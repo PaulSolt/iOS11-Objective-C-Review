@@ -75,8 +75,7 @@
 				C09722BA23E3587E00F27079 /* SceneDelegate.h */,
 				C09722BB23E3587E00F27079 /* SceneDelegate.m */,
 				C09722D323E358AA00F27079 /* Models */,
-				C09722BD23E3587E00F27079 /* ViewController.h */,
-				C09722BE23E3587E00F27079 /* ViewController.m */,
+				C09722DA23E35FE600F27079 /* View Controllers */,
 				C09722C023E3587E00F27079 /* Main.storyboard */,
 				C09722D523E35D8300F27079 /* LSIErrors.h */,
 				C09722D623E35D8300F27079 /* LSIErrors.m */,
@@ -97,6 +96,15 @@
 				C09722D123E358A500F27079 /* Comic.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C09722DA23E35FE600F27079 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C09722BD23E3587E00F27079 /* ViewController.h */,
+				C09722BE23E3587E00F27079 /* ViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -12,16 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Comic : NSObject
 
-@property int num;
-@property int month;
-@property int day;
-@property int year;
-@property NSString *news;
-@property NSString *title;
-@property NSString *safeTitle;
-@property NSString *transcript;
-@property NSString *alt;
-@property NSURL *imageURL;
+@property (nonatomic) int num;
+@property (nonatomic) int month;
+@property (nonatomic) int day;
+@property (nonatomic) int year;
+@property (nonatomic, copy) NSString *news;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *safeTitle;
+@property (nonatomic, copy) NSString *transcript;
+@property (nonatomic, copy) NSString *alt;
+@property (nonatomic) NSURL *imageURL;
 
 @end
 
