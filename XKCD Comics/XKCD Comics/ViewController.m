@@ -32,10 +32,20 @@
     NSURL *baseURL = [NSURL URLWithString:@"https://xkcd.com/"];
 //    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES];
     
+    BOOL mostRecent = YES; // Either load most recent or the specific #
     int comicNumber = 417; //2260;
-    NSString *comicNumberString = [NSString stringWithFormat:@"%i", comicNumber];
-    NSURL *url = [[baseURL URLByAppendingPathComponent:comicNumberString] URLByAppendingPathComponent:@"info.0.json"];
+    // 417 is a portrait comic not landscape
 
+    
+    NSString *endpoint = @"info.0.json";
+    NSURL *url = [baseURL URLByAppendingPathComponent:endpoint];
+                  
+    if (!mostRecent) {
+        NSString *comicNumberString = [NSString stringWithFormat:@"%i", comicNumber];
+        url = [[baseURL URLByAppendingPathComponent:comicNumberString] URLByAppendingPathComponent:endpoint];
+    }
+    
+    
 
     [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
