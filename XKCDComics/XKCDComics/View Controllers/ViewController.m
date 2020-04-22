@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.maxComicNumber = 0;
+    self.maxComicNumber = 1;
     [self fetchLastComic];
     
     
